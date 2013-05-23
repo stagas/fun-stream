@@ -6,12 +6,12 @@ functional streams decorator
 ## Example
 
 ```js
-var fun = require('../');
+var fun = require('fun-stream');
 var Stream = require('stream');
 
 function createStream(){
   var s = new Stream;
-  s.readable = true
+  s.readable = true;
 
   var times = 0;
   var iv = setInterval(function(){
