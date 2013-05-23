@@ -1,0 +1,10 @@
+{
+  "name": "fun-stream",
+  "version": "0.0.1",
+  "description": "functional streams decorator",
+  "keywords": ["functional","streams"],
+  "author": "stagas",
+  "license": "MIT",
+  "main": "index.js",
+  "engines": { "node": "*" }
+}
