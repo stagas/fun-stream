@@ -6,5 +6,8 @@
   "author": "stagas",
   "license": "MIT",
   "main": "index.js",
+  "devDependencies": {
+    "through": "*"
+  },
   "engines": { "node": "*" }
 }

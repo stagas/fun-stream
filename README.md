@@ -10,19 +10,19 @@ var fun = require('fun-stream');
 var Stream = require('stream');
 
 function createStream(){
-  var s = new Stream;
-  s.readable = true;
+  var stream = new Stream;
+  stream.readable = true
 
-  var times = 0;
-  var iv = setInterval(function(){
-    s.emit('data', times + '\n');
-    if (5 == ++times) {
-      s.emit('end');
-      clearInterval(iv);
+  var count = 0;
+  var interval = setInterval(function(){
+    stream.emit('data', count);
+    if (5 == ++count) {
+      stream.emit('end');
+      clearInterval(interval);
     }
   }, 1000);
 
-  return s;
+  return stream;
 }
 
 var stdout = fun(process.stdout);
